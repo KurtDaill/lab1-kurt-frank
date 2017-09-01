@@ -1,0 +1,5 @@
+-To implement roads, we have to use two different graphs in our A* calc.
+1. Road Graph: Height check only for objects on the 'road' layer. This is the first thing that the meeple
+script will check for. Basically it'll use this to ask 'is there a route to my desination from the road I'm on'
+2. Non-Road Graph: More general graph to see where the ground is and where buildings/obstacles are. Used if
+Road Graph doesn't pull up any routes.
